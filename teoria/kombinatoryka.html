@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/math.css">
+    <title>Kombinatoryka</title>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h2>Matematyka</h2>
+        <a href="trygonometria.html">Trygonometria</a>
+        <a href="geometria.html">Geometria</a>
+        <a href="#" style="color:black;background-color: white;">Kombinatoryka</a>
+        <a href="square.html">Funkcja Kwadratowa</a>
+        <a href="liniowa.html">Funkcja Liniowa</a>
+        <a href="wielomiany.html">Wielomiany</a>
+        <hr>
+        <h2>Język Polski</h2>
+        <a href="ancient.html">Starożytność</a>
+        <a href="middleAge.html">Średniowiecze</a>
+        <a href="renesans.html">Renesans</a>
+        <a href="baroque.html">Barok</a>
+        <a href="romantism.html">Romantyzm</a>
+        <a href="pozytywizm.html">Pozytywizm</a>
+        <hr>
+        <h2>Język angielski</h2>
+        <a href="past_time.html">Czasy Przeszłe</a>
+        <a href="present_time.html">Czasy Teraźniejsze</a>
+        <a href="future_time.html">Czasy Przyszłe</a>
+    </div>
+
+    <div id="main">
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+        <img src="../images/menu.png" onclick="openNav()" style="width: 30px; height: auto; cursor: pointer; position: sticky; top: 15px; left: 15px; margin-top: 15px;"
+            id="menubtn">
+        <div id="container">
+            <h2>Kombinatoryka</h2>
+            <h4>a) Podstawowe informacje:</h4>
+            <p>Kombinatoryka to dział matematyki zajmujący się analizą struktur kombinatorycznych, takich jak permutacje, kombinacje, oraz rozwiązania problemów związanych z aranżacją, wyborem i układem elementów.
+                Problemy w zadaniach najczęściej będą dotyczyły rzutów kostką, monetą lub ustawieniem czegoś w kolejności.
+            </p>
+            <h4>b) Najważniejsze własności:</h4>
+                <div class="image-item">
+                    <img width="70%" style="border:black solid 2px;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhaehc1ahwurdSVfPb1pGzHQX9FvRAfkWUIzswzaig3AIrKekIOq40VDUiUNvwu9Oiz9bwVsuxFWHYKPmYPcMLVYuBU2z9HL8XX-OkQvuG_v7wSGE9VHafJuxjB9OOzeOwUTBYalfFwEs/s1600/Rachunek_prawdopodobie%C5%84stwa.gif">
+                    <p>Niezbędne wzory.</p>
+                </div>
+            <h4>c) Przykłady zadań:</h4>
+            <img id="exercises" src="https://imgv2-2-f.scribdassets.com/img/document/643468162/original/28f880a830/1716413310?v=1" alt="Przykłady zadań z kombinatoryki"><br><br>
+            <div class="buttons">
+                <a class="before" href="geometria.html">Wcześniejsza lekcja</a> <a class="after" href="square.html">Następna lekcja</a>
+            </div>
+            <a class="styled-link" href="../quizy/quizKomb.html">Przejdź do quizu</a>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("menubtn").style.visibility = "hidden"
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("menubtn").style.visibility = 'visible';
+        }
+    </script>
+</body>
+
+</html>

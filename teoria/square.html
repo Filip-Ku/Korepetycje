@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/math.css">
+    <title>Funkcja kwadratowa</title>
+</head>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <h2>Matematyka</h2>
+    <a href="trygonometria.html">Trygonometria</a>
+    <a href="geometria.html">Geometria</a>
+    <a href="kombinatoryka.html">Kombinatoryka</a>
+    <a href="#" style="color:black;background-color: white;">Funkcja Kwadratowa</a>
+    <a href="liniowa.html">Funkcja Liniowa</a>
+    <a href="wielomiany.html">Wielomiany</a>
+    <hr>
+    <h2>Język Polski</h2>
+    <a href="ancient.html"">Starożytność</a>
+    <a href="middleAge.html">Średniowiecze</a>
+    <a href="renesans.html">Renesans</a>
+    <a href="baroque.html">Barok</a>
+    <a href="romantism.html">Romantyzm</a>
+    <a href="pozytywizm.html">Pozytywizm</a>
+    <hr>
+    <h2>Język angielski</h2>
+    <a href="past_time.html">Czasy Przeszłe</a>
+    <a href="present_time.html" >Czasy Teraźniejsze</a>
+    <a href="future_time.html">Czasy Przyszłe</a>
+  </div>
+  <div id="main">
+    <ul>
+        <li><a href="../index.html">Strona główna</a></li>
+        <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+        <li style="float:right"><a href="../about.html">O nas</a></li>
+    </ul>
+    <img src="../images/menu.png" onclick="openNav()" style="width: 30px; height: auto; cursor: pointer; position: sticky; top: 15px; left: 15px; margin-top: 15px;"
+        id="menubtn">
+    <div id="container">
+        <h2>Funkcja Kwadratowa</h2>
+        <h4>a) Podstawowe informacje:</h4>
+        <p>Funkcja kwadratowa to funkcja postaci<br> <img height="60px" src="https://naukamatmy.pl/img/blog/FK-1.jpg"><br> Funkcje kwadratowe są często wykorzystywane do modelowania różnych zjawisk w matematyce, fizyce, ekonomii itp.</p>
+        <h4>b) Najważniejsze własności:</h4>
+        <div id="graphs-container">
+            <div class="graph-box">
+                <img style="height:300px" src="https://www.megamatma.pl/res/upload/RYSUNKI_DOBRE/WZORY/tablice_calosc/44_3.gif">
+                <p>Wykres funkcji kwadratowej.</p>
+            </div>
+            <div class="graph-box">
+                <img style="height:300px" src="https://www.megamatma.pl/res/upload/RYSUNKI_DOBRE/WZORY/tablice_calosc/44_4.gif">
+                <p>Postać kanoniczna funkcji kwadratowej.</p>
+            </div>
+            <div class="graph-box">
+                <img style="height:600px" src="https://www.cce.pk.edu.pl/~kraus/bryly_3d/wykresy/x12.png">
+                <p>Postać iloczynowa funkcji kwadratowej.</p>
+            </div>
+            <div class="graph-box">
+                <img style="height:600px" src="https://zlotynauczyciel.pl/wp-content/uploads/2024/03/20240314_201348_0002.png">
+                <p>Najważniejsze wzory.</p>
+            </div>
+        </div>
+        <h4>c) Przykłady zadań:</h4>
+        <img id="exercises" style="border-left:black solid 4px" src="https://img2.docer.pl/image/l/n85xnsc.png" alt="Przykłady zadań z funkcji kwadratowej"><br><br>    
+        <div class="buttons">
+            <a class="before" href="kombinatoryka.html">Wcześniejsza lekcja</a> <a class="after" href="liniowa.html">Następna lekcja</a>
+        </div>
+        <a class="styled-link" href="../quizy/quizFK.html">Przejdź do quizu</a>
+    </div>
+</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("menubtn").style.visibility = "hidden"
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("menubtn").style.visibility = 'visible';
+    }
+</script>
+</body>
+

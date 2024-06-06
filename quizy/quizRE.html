@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/quiz.css">
+    <title>Quiz: Renesans</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="../offer.html">Oferta</a></li>
+            <li><a href="../theory.html">Teoria</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+    </header>
+
+<main>
+    <div id="container">
+        <h1>Quiz z epoki literackiej Renesans</h1><br>
+
+        <h2 class="question">1. Który z poniższych autorów jest związany z epoką renesansu?</h2>
+        <label><input type="radio" name="question1" id="correct1">William Shakespeare</label>
+        <label><input type="radio" name="question1">Adam Mickiewicz</label>
+        <label><input type="radio" name="question1">Johann Wolfgang von Goethe</label>
+        <label><input type="radio" name="question1">Homer</label><br>
+
+        <h2 class="question">2. Jaki jest tytuł słynnego dzieła Mikołaja Reja?</h2>
+        <label><input type="radio" name="question2" id="correct2">Krótka rozprawa między trzema osobami</label>
+        <label><input type="radio" name="question2">Pan Tadeusz</label>
+        <label><input type="radio" name="question2">Iliada</label>
+        <label><input type="radio" name="question2">Dziady</label><br>
+
+        <h2 class="question">3. Które dzieło zostało napisane przez Michała Anioła w okresie renesansu?</h2>
+        <label><input type="radio" name="question3">Sykstyńska Kaplica</label>
+        <label><input type="radio" name="question3" id="correct3">Sąd Ostateczny</label>
+        <label><input type="radio" name="question3">Pieta</label>
+        <label><input type="radio" name="question3">Dawid</label><br>
+
+        <h2 class="question">4. Który z poniższych utworów jest autorstwa Jana Kochanowskiego?</h2>
+        <label><input type="radio" name="question4" id="correct4">Treny</label>
+        <label><input type="radio" name="question4">Bogurodzica</label>
+        <label><input type="radio" name="question4">Ballady i romanse</label>
+        <label><input type="radio" name="question4">Odprawa posłów greckich</label><br>
+
+        <h2 class="question">5. Które z poniższych dzieł jest typowym przykładem literatury renesansu?</h2>
+        <label><input type="radio" name="question5" id="correct5">Boska Komedia</label>
+        <label><input type="radio" name="question5">Faust</label>
+        <label><input type="radio" name="question5">Odyseja</label>
+        <label><input type="radio" name="question5">Hamlet</label><br>
+
+        <label><input type="submit" value="Sprawdź wynik!" onclick="checkAns()"></label><br><br>
+
+        <a href="../teoria/renesans.html">Powróć do lekcji!</a>
+    </div>    
+</main>
+
+<script type="text/javascript">
+    function checkAns() {
+        var score = 0;
+        if(document.getElementById('correct1').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct2').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct3').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct4').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct5').checked){
+            score++;
+        }
+
+        alert("Uzyskane punkty: " + score);
+
+        var radioButtons = document.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(function (radio) {
+            radio.checked = false;
+        });
+    }
+</script>
+</body>
+</html>

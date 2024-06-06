@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/math.css">
+    <title>Funkcja liniowa</title>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h2>Matematyka</h2>
+        <a href="trygonometria.html">Trygonometria</a>
+        <a href="geometria.html">Geometria</a>
+        <a href="kombinatoryka.html">Kombinatoryka</a>
+        <a href="square.html">Funkcja Kwadratowa</a>
+        <a href="#" style="color:black;background-color: white;">Funkcja Liniowa</a>
+        <a href="wielomiany.html">Wielomiany</a>
+        <hr>
+        <h2>Język Polski</h2>
+        <a href="ancient.html">Starożytność</a>
+        <a href="middleAge.html">Średniowiecze</a>
+        <a href="renesans.html">Renesans</a>
+        <a href="baroque.html">Barok</a>
+        <a href="romantism.html">Romantyzm</a>
+        <a href="pozytywizm.html">Pozytywizm</a>
+        <hr>
+        <h2>Język angielski</h2>
+        <a href="past_time.html">Czasy Przeszłe</a>
+        <a href="present_time.html">Czasy Teraźniejsze</a>
+        <a href="future_time.html">Czasy Przyszłe</a>
+    </div>
+    <div id="main">
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+        <img src="../images/menu.png" onclick="openNav()" style="width: 30px; height: auto; cursor: pointer; position: sticky; top: 15px; left: 15px; margin-top: 15px;"
+            id="menubtn">
+        <div id="container">
+            <h2>Funkcja Liniowa</h2>
+            <h4>a) Podstawowe informacje:</h4>
+            <p>Funkcja liniowa to funkcja postaci <strong> y= ax+b </strong>
+            <br> <img height="300px" style="margin: 20px;border: black solid 2px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlDCj2OMU_T9BxZ1IMmTxjjBzKOr_DtM6aYw&s"><br>
+                 Funkcje liniowe są często wykorzystywane do opisu prostych zależności między zmiennymi w wielu dziedzinach nauki i życia codziennego.</p>
+            <h4>b) Najważniejsze własności:</h4>
+            <div id="graphs-container">
+                <div class="graph-box">
+                    <img style="height:400px" src="https://prod.odrabiamy-assets.pl/uploads/content_image/image/37974/niePTHgoEdjDTEPT/BOQUA%3D%3D_fd5e3c7a8a99ff218b6748b5b1e1bd8f0e5d9ce535652f4b4a58aa878f1d2444.jpg">
+                    <p>Wykres funkcji liniowej.</p>
+                </div>
+                <div class="graph-box">
+                    <img style="height:400px" src="https://www.megamatma.pl/res/upload/RYSUNKI_DOBRE/WZORY/tablice_calosc/43_1.gif">
+                    <p>Przykład wykresu funkcji liniowej.</p>
+                </div>
+                <div class="graph-box">
+                    <img style="height:600px" src="https://staticopracowania.iplsc.com/opracowania_prod_static/images/189113/funkcja_liniowa_i_jej_w%C5%82asno%C5%9Bci_23.gif">
+                    <p>Szukanie wykresu funkcji liniowej.</p>
+                </div>
+            </div>
+            <h4>c) Przykłady zadań:</h4>
+            <img id="exercises" style="border-left:black solid 4px" src="https://imgv2-2-f.scribdassets.com/img/document/731695922/original/a81c89c562/1716133501?v=1" alt="Przykłady zadań z funkcji liniowej"><br><br>
+            <div class="buttons">
+                <a class="before" href="square.html">Wcześniejsza lekcja</a> <a class="after" href="wielomiany.html">Następna lekcja</a>
+            </div>
+            <a class="styled-link" href="../quizy/quizFL.html">Przejdź do quizu</a>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("menubtn").style.visibility = "hidden"
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("menubtn").style.visibility = 'visible';
+        }
+    </script>
+</body>

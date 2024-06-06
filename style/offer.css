@@ -1,0 +1,287 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/theme.png");
+    background-size:auto;
+    animation: scrollAnimation 30s linear infinite alternate;
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-attachment: fixed;
+    }
+}
+
+@keyframes scrollAnimation {
+    0% { background-position: 100% 0; }
+    100% { background-position: 0 0; } 
+}
+@font-face {
+    font-family: navFont;
+    src: url(../fonts/BAHNSCHRIFT.TTF);
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+header {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #AAF0D1;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: navFont;
+    padding-left: 0; 
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    position: relative;
+}
+
+li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.5s;
+    position: absolute;
+    left: 15%;
+    bottom: 20px; 
+}
+
+li a:hover {
+    background-color: #51b96b;
+}
+
+li a:hover::after {
+    width: 70%;
+}
+
+#main_menu{
+    background-color: #AAF0D1;
+    text-align: center;
+    width: 80%;
+    margin:  50px auto;
+    padding: 10px;
+    border: 1px solid black;
+    font-family: mainFont;
+}
+
+#images {
+    display: flex;
+}
+
+.elem {
+    text-align: center;
+    margin: auto; 
+    font-size: 30px;
+}
+
+#exampleFilm {
+    text-align: center; 
+}
+
+#exampleFilm h2 {
+    font-family: navFont; 
+    margin: 100px 0 30px 0; 
+}
+
+footer{
+    background-color: #AAF0D1;
+    text-align: center;
+    font-family: navFont;
+    font-size: 20px;
+    padding: 15px;
+    margin: 0;
+}
+
+
+#button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+#button {
+    transition: all 1s;
+    background-color: #AAF0D1;
+    width: 50%; 
+    text-align: center;
+    padding: 20px;
+    font-family: navFont;
+    font-size: 30px;
+    margin-top: 75px;
+    margin-left: 25%;
+    margin-bottom: 175px;
+    border: black solid 1px;
+    animation: slideInFromLeft3 3s ease-in-out;
+}
+
+#left{
+    width: 22%;
+    height: auto;
+    float: left;
+    text-align: center;
+    margin:10px;
+}
+
+#middle {
+    width: 48%;
+    height: auto;
+    float: left;
+    margin: 10px;
+}
+
+#right {
+    width: 25%;
+    height: auto;
+    float: left;
+    text-align: center;
+    margin:  auto;
+}
+    
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInFromLeft2 {
+    0% {
+        transform: translateX(-33%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideInFromLeft3 {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.avatar {
+    display: block;
+    margin: 40px;
+    text-align: center;
+    animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+.description {
+    margin-top:100px;
+    margin-left:25px;
+    margin-bottom: 20%;
+    max-width: 80%; 
+    font-size:25px;
+    animation: slideInFromLeft2 3s ease-in-out;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+#scrollUpBtn, #scrollDownBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
+    font-size: 40px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+#scrollUpBtn {
+    bottom: 100px;
+}
+
+.contactInfo {
+    display: none;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: mainFont;
+    background-color: #F0F0F0;
+    border: 1px solid #000;
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.contactInfo {
+    display: none;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: mainFont;
+    background-color: #F0F0F0;
+    border: 1px solid #000;
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 225px;
+}
+
+.contact-container button {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    font-family: navFont;
+    font-size: 30px;
+    margin: auto;
+    border: black solid 1px;
+    background-color: #AAF0D1;
+    transition: all 1s;
+    animation: slideInFromLeft3 3s ease-in-out;
+}
+
+.contact-container button:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.contact-container .contactInfo {
+    margin-top: 20px;
+}

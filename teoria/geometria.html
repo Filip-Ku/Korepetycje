@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/math.css">
+    <title>Geometria</title>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h2>Matematyka</h2>
+        <a href="trygonometria.html">Trygonometria</a>
+        <a href="#" style="color:black;background-color: white;">Geometria</a>
+        <a href="kombinatoryka.html">Kombinatoryka</a>
+        <a href="square.html">Funkcja Kwadratowa</a>
+        <a href="liniowa.html">Funkcja Liniowa</a>
+        <a href="wielomiany.html">Wielomiany</a>
+        <hr>
+        <h2>Język Polski</h2>
+        <a href="ancient.html">Starożytność</a>
+        <a href="middleAge.html">Średniowiecze</a>
+        <a href="renesans.html">Renesans</a>
+        <a href="baroque.html">Barok</a>
+        <a href="romantism.html">Romantyzm</a>
+        <a href="pozytywizm.html">Pozytywizm</a>
+        <hr>
+        <h2>Język angielski</h2>
+        <a href="past_time.html">Czasy Przeszłe</a>
+        <a href="present_time.html">Czasy Teraźniejsze</a>
+        <a href="future_time.html">Czasy Przyszłe</a>
+    </div>
+
+    <div id="main">
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+        <img src="../images/menu.png" onclick="openNav()" style="width: 30px; height: auto; cursor: pointer; position: sticky; top: 15px; left: 15px; margin-top: 15px;"
+            id="menubtn">
+        <div id="container">
+            <h2>Geometria</h2>
+            <h4>a) Podstawowe informacje:</h4>
+            <p>Geometria to dział matematyki zajmujący się badaniem kształtów, wielkości oraz wzajemnych położeń figur w przestrzeni.</p>
+            <h4>b) Najważniejsze własności:</h4>
+                <div class="image-item">
+                    <img style="width:70%" src="https://lh6.googleusercontent.com/proxy/YE4FVQ4ANvcTz65CrXrAcf3bR5hFqRJMHR5lViJjdw8zjRJrO1t3kqnNg3OnxZ-6LwaFV0G71oda-1dClW1a" alt="Pola i obwody figur">
+                    <p>Pola i obwody figur</p>
+                </div>
+                <div class="image-item">
+                    <img style="width:70%" src="https://mm.pwn.pl/ency/jpg/583/a/d89i4876.jpg" alt="Rodzaje kątów">
+                    <p>Rodzaje kątów.</p>
+                </div>
+                <div class="image-item">
+                    <img style="width:70%" src="https://www.medianauka.pl/matematyka/grafika/rysunek102.jpg" alt="Rodzaje trójkątów">
+                    <p>Rodzaje trójkątów.</p>
+                </div>
+                <div class="image-item">
+                    <img style="width:70%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTudVt9tDUWCdqsM75wtWPJfYSUisbPHSEd-g&s" alt="Kąty wpisane i opisane">
+                    <p>Kąty wpisane i opisane.</p>
+                </div>
+                <div class="image-item">
+                    <img style="width:70%" src="https://sklep.educarium.pl/img/14442456/eduplansza-matematyka-pola-i-objetosci-figur-pr.jpg" alt="Figury przestrzenne">
+                    <p>Figury przestrzenne.</p>
+                </div>
+            <h4>c) Przykłady zadań:</h4>
+            <img id="exercises" style="border-left: black solid 4px" src="https://d-art.ppstatic.pl/kadry/k/r/1/71/2e/5548bc1c9c575_o_large.jpg" alt="Przykłady zadań z geometrii"><br><br>
+            <div class="buttons">
+                <a class="before" href="trygonometria.html">Wcześniejsza lekcja</a> <a class="after" href="kombinatoryka.html">Następna lekcja</a>
+            </div>
+            <a class="styled-link" href="../quizy/quizGeo.html">Przejdź do quizu</a>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("menubtn").style.visibility = "hidden"
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("menubtn").style.visibility = 'visible';
+        }
+    </script>
+</body>
+
+</html>

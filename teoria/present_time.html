@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../style/present_time.css">
+  <title>Czasy Teraźniejsze</title>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h2>Matematyka</h2>
+        <a href="trygonometria.html">Trygonometria</a>
+        <a href="geometria.html">Geometria</a>
+        <a href="kombinatoryka.html">Kombinatoryka</a>
+        <a href="square.html">Funkcja Kwadratowa</a>
+        <a href="liniowa.html">Funkcja Liniowa</a>
+        <a href="wielomiany.html">Wielomiany</a>
+        <hr>
+        <h2>Język Polski</h2>
+        <a href="ancient.html">Starożytność</a>
+        <a href="middleAge.html">Średniowiecze</a>
+        <a href="renesans.html">Renesans</a>
+        <a href="baroque.html">Barok</a>
+        <a href="romantism.html">Romantyzm</a>
+        <a href="pozytywizm.html">Pozytywizm</a>
+        <hr>
+        <h2>Język angielski</h2>
+        <a href="past_time.html">Czasy Przeszłe</a>
+        <a href="#" style="color:black;background-color: white;">Czasy Teraźniejsze</a>
+        <a href="future_time.html">Czasy Przyszłe</a>
+    
+      </div>
+      
+      <div id="main">
+        <ul>
+          <li><a href="../index.html">Strona główna</a></li>
+          <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+          <li style="float:right"><a href="../about.html">O nas</a></li>
+      </ul>
+      <img src="../images/menu.png" onclick="openNav()" style="width: 30px; height: auto; cursor: pointer; position: sticky; top: 15px; left: 15px; margin-top: 15px;" id="menubtn">
+        <div id="container">
+            <h1>Czasy teraźniejsze w języku angielskim</h1>
+            <hr style="border-top: 1px solid black;"/>
+            <div id="tenses-container">   
+                <div class="tense-box">
+                  <h2>Present Simple</h2>
+                  <p>Używany do wyrażania czynności rutynowych, nawyków, prawd ogólnych i faktów.</p>
+                  <strong style="font-size: 18px;">Budowa: podmiot	+	czasownik w formie podstawowej </strong>
+                  <p>Przykład: <br> I drink coffee every morning. (Piję kawę każdego ranka.)</p>
+                </div>
+              
+                <div class="tense-box">
+                  <h2>Present Continuous</h2>
+                  <p>Używany do wyrażania czynności dziejących się teraz, sytuacji tymczasowych i planów na przyszłość.</p>
+                  <strong style="font-size: 18px;">Budowa: podmiot + am/is/are + czasownik + -ing</strong>
+                  <p>Przykład:<br>  I am studying English right now. (Uczę się angielskiego teraz.)</p>
+              </div>
+            
+              <div class="tense-box">
+                  <h2>Present Perfect</h2>
+                  <p>Używany do wyrażania czynności, które zaczęły się w przeszłości i trwają do teraz lub mają związek z teraźniejszością.</p>
+                  <strong style="font-size: 18px;">Budowa: podmiot + have/has + czasownik w formie trzeciej (czasownik + -ed)</strong>
+                  <p>Przykład:<br>  I have lived in Warsaw for five years. (Mieszkam w Warszawie od pięciu lat.)</p>
+              </div>
+            
+              <div class="tense-box">
+                  <h2>Present Perfect Continuous</h2>
+                  <p>Używany do wyrażania czynności, które zaczęły się w przeszłości, trwają do teraz i prawdopodobnie będą trwały nadal.</p>
+                  <strong style="font-size: 18px;">Budowa: podmiot + have/has been + czasownik +  <br>-ing</strong>
+                  <p>Przykład: <br> I have been studying English for two hours. (Uczę się angielskiego od dwóch godzin.)</p>
+              </div>
+            </div >
+            
+        <div class="buttons">
+          <a class="before" href="past_time.html">Wcześniejsza lekcja</a> <a class="after" href="future_time.html">Następna lekcja</a>
+  </div>
+  <a class="styled-link" href="../quizy/quizPRT.html">Przejdź do quizu</a>
+    </div>
+      <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.getElementById("menubtn").style.visibility="hidden"
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.getElementById("menubtn").style.visibility = 'visible';
+        }
+        </script>
+</body>
+</html>

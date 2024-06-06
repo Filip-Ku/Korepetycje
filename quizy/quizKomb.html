@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/quiz.css">
+    <title>Kombinatoryka Quiz</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="../offer.html">Oferta</a></li>
+            <li><a href="../theory.html">Teoria</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+    </header>
+
+<main>
+    <div id="container">
+        <h1>Quiz z działu kombinatoryka</h1><br>
+
+
+        <h2 class="question">1. Ile jest permutacji zbioru 5-elementowego?</h2>
+        <label><input type="radio" name="question1" id="correct1">120</label>
+        <label><input type="radio" name="question1">60</label>
+        <label><input type="radio" name="question1">24</label>
+        <label><input type="radio" name="question1">720</label><br>
+
+        <h2 class="question">2. Ile jest kombinacji 3-elementowych z 6 elementów?</h2>
+        <label><input type="radio" name="question2" id="correct2">20</label>
+        <label><input type="radio" name="question2">18</label>
+        <label><input type="radio" name="question2">15</label>
+        <label><input type="radio" name="question2">10</label><br>
+
+        <h2 class="question">3. Ile jest sposobów na ułożenie słowa "KOMBINATORYKA"?</h2>
+        <label><input type="radio" name="question3">10! / 2!</label>
+        <label><input type="radio" name="question3" id="correct3">13! / 2!</label>
+        <label><input type="radio" name="question3">13!</label>
+        <label><input type="radio" name="question3">12!</label><br>
+
+        <h2 class="question">4. Ile jest różnych podzbiorów zbioru 4-elementowego?</h2>
+        <label><input type="radio" name="question4">12</label>
+        <label><input type="radio" name="question4">8</label>
+        <label><input type="radio" name="question4" id="correct4">16</label>
+        <label><input type="radio" name="question4">32</label><br>
+
+        <h2 class="question">5. Jaka jest liczba kombinacji bez powtórzeń 4-elementowych z 7 elementów?</h2>
+        <label><input type="radio" name="question5" id="correct5">35</label>
+        <label><input type="radio" name="question5">49</label>
+        <label><input type="radio" name="question5">21</label>
+        <label><input type="radio" name="question5">28</label><br>
+
+        <label><input type="submit" value="Sprawdź wynik!" onclick="checkAns()"></label><br><br>
+
+        <a href="../teoria/kombinatoryka.html">Powróć do lekcji!</a>
+    </div>    
+</main>
+
+<script type="text/javascript">
+    function checkAns() {
+        var score = 0;
+        if(document.getElementById('correct1').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct2').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct3').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct4').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct5').checked){
+            score++;
+        }
+
+        alert("Uzyskane punkty: " + score);
+
+        var radioButtons = document.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(function (radio) {
+            radio.checked = false;
+        });
+    }
+</script>
+</body>
+</html>

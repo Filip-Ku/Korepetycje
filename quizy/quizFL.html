@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/quiz.css">
+    <title>Funkcja Liniowa Quiz</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="../offer.html">Oferta</a></li>
+            <li><a href="../theory.html">Teoria</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+    </header>
+
+<main>
+    <div id="container">
+        <h1>Quiz z działu funkcji liniowej</h1><br>
+
+        <h2 class="question">1. Jaki jest wzór ogólny funkcji liniowej?</h2>
+        <label><input type="radio" name="question1" id="correct1">f(x) = ax + b</label>
+        <label><input type="radio" name="question1">f(x) = ax² + bx + c</label>
+        <label><input type="radio" name="question1">f(x) = ax³ + bx + c</label>
+        <label><input type="radio" name="question1">f(x) = a²x + b²x + c²</label><br>
+
+        <h2 class="question">2. Jakie jest miejsce zerowe funkcji liniowej f(x) = 2x - 3?</h2>
+        <label><input type="radio" name="question2" id="correct2">x = 3/2</label>
+        <label><input type="radio" name="question2">x = 3</label>
+        <label><input type="radio" name="question2">x = -3</label>
+        <label><input type="radio" name="question2">x = 2/3</label><br>
+
+        <h2 class="question">3. Co oznacza współczynnik kierunkowy w funkcji liniowej?</h2>
+        <label><input type="radio" name="question3">Jest to współczynnik przy x² w równaniu funkcji</label>
+        <label><input type="radio" name="question3">Jest to wartość funkcji dla x=0</label>
+        <label><input type="radio" name="question3" id="correct3">Jest to współczynnik przy x w równaniu funkcji</label>
+        <label><input type="radio" name="question3">Jest to wyraz wolny w równaniu funkcji</label><br>
+
+        <h2 class="question">4. Które z poniższych opisuje równanie prostej w postaci ogólnej: ax + by + c = 0?</h2>
+        <label><input type="radio" name="question4">y = ax + c</label>
+        <label><input type="radio" name="question4">y = ax² + bx + c</label>
+        <label><input type="radio" name="question4">y = mx + b</label>
+        <label><input type="radio" name="question4" id="correct4">y = mx + n</label><br>
+
+        <h2 class="question">5. Jak nazywamy punkt, w którym prosta przecina oś y?</h2>
+        <label><input type="radio" name="question5">Punkt przecięcia</label>
+        <label><input type="radio" name="question5">Punkt styczności</label>
+        <label><input type="radio" name="question5">Wierzchołek</label>
+        <label><input type="radio" name="question5" id="correct5">Punkt przecięcia z osią y</label><br>
+
+        <label><input type="submit" value="Sprawdź wynik!" onclick="checkAns()"></label><br><br>
+
+        <a href="../teoria/liniowa.html">Powróć do lekcji!</a>
+    </div>    
+</main>
+
+<script type="text/javascript">
+    function checkAns() {
+        var score = 0;
+        if(document.getElementById('correct1').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct2').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct3').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct4').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct5').checked){
+            score++;
+        }
+
+        alert("Uzyskane punkty: " + score);
+
+        var radioButtons = document.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(function (radio) {
+            radio.checked = false;
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/quiz.css">
+    <title>Trygonometria Quiz</title>
+
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="../offer.html">Oferta</a></li>
+            <li><a href="../theory.html">Teoria</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+    </header>
+
+<main>
+    <div id="container">
+            <h1>Quiz z działu trygonometria</h1><br>
+                <h2 class="question">1. Jaki jest sinus kąta 60 stopni?</h2>
+                    <label><input type="radio" name="question1" id="correct1">√3/2</label>
+                    <label><input type="radio" name="question1">1/2</label>
+                    <label><input type="radio" name="question1">1</label>
+                    <label><input type="radio" name="question1">2√3/3</label><br>
+
+                <h2 class="question">2. Oblicz wartość tangensa kąta 45 stopni.</h2>
+                    <label><input type="radio" name="question2">1</label>
+                    <label><input type="radio" name="question2">0</label>
+                    <label><input type="radio" name="question2">√2</label>
+                    <label><input type="radio" name="question2" id="correct2">1/√2</label><br>
+
+                    <h2 class="question">3. Jeśli cosinus kąta alfa wynosi 0,5, to jakie jest przeciwprostokątna w trójkącie prostokątnym o kącie alfa?</h2>
+                    <label><input type="radio" name="question3">1</label>
+                    <label><input type="radio" name="question3" id="correct3">2</label>
+                    <label><input type="radio" name="question3">√3</label>
+                    <label><input type="radio" name="question3">0.5</label><br>
+
+                    <h2 class="question">4. Jakie są wartości funkcji trygonometrycznych sinus i cosinus dla kąta 90 stopni?</h2>
+                    <label><input type="radio" name="question4" id="correct4">sin 90° = 1, cos 90° = 0</label>
+                    <label><input type="radio" name="question4">sin 90° = 0, cos 90° = 1</label>
+                    <label><input type="radio" name="question4">sin 90° = 0, cos 90° = 0</label>
+                    <label><input type="radio" name="question4">sin 90° = 1, cos 90° = 1</label><br><br>
+
+                    <h2 class="question">5. Oblicz wartość cosinusa kąta 30 stopni, korzystając z twierdzenia Pitagorasa.</h2>
+                    <label><input type="radio" name="question5">1/2</label>
+                    <label><input type="radio" name="question5" id="correct5">√2/2</label>
+                    <label><input type="radio" name="question5">3/2</label>
+                    <label><input type="radio" name="question5">√3/2</label><br>
+
+                    <label><input type="submit" value="Sprawdź wynik!" onclick="checkAns()"></label><br><br>
+
+
+                    <a href="../teoria/trygonometria.html">Powróć do lekcji!</a>
+
+
+                    
+    
+    </div>    
+</main>
+<script type="text/javascript">
+    function checkAns() {
+        var score = 0;
+        if(document.getElementById('correct1').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct2').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct3').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct4').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct5').checked){
+            score++;
+        }
+
+        alert("Uzyskane punkty: "+score);
+
+        var radioButtons = document.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(function (radio) {
+            radio.checked = false;
+        });
+    }
+    
+</script>
+</body>
+</html>

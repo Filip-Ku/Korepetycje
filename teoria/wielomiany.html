@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/math.css">
+    <title>Wielomiany</title>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h2>Matematyka</h2>
+        <a href="trygonometria.html">Trygonometria</a>
+        <a href="geometria.html">Geometria</a>
+        <a href="kombinatoryka.html">Kombinatoryka</a>
+        <a href="square.html">Funkcja Kwadratowa</a>
+        <a href="liniowa.html">Funkcja Liniowa</a>
+        <a href="#" style="color:black;background-color: white;">Wielomiany</a>
+        <hr>
+        <h2>Język Polski</h2>
+        <a href="ancient.html">Starożytność</a>
+        <a href="middleAge.html">Średniowiecze</a>
+        <a href="renesans.html">Renesans</a>
+        <a href="baroque.html">Barok</a>
+        <a href="romantism.html">Romantyzm</a>
+        <a href="pozytywizm.html">Pozytywizm</a>
+        <hr>
+        <h2>Język angielski</h2>
+        <a href="past_time.html">Czasy Przeszłe</a>
+        <a href="present_time.html">Czasy Teraźniejsze</a>
+        <a href="future_time.html">Czasy Przyszłe</a>
+    </div>
+    <div id="main">
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+        <img src="../images/menu.png" onclick="openNav()" style="width: 30px; height: auto; cursor: pointer; position: sticky; top: 15px; left: 15px; margin-top: 15px;"
+            id="menubtn">
+        <div id="container">
+            <h2>Wielomiany</h2>
+            <h4>a) Podstawowe informacje:</h4>
+            <p>Wielomian to funkcja postaci <br> <img style="height: 200px; border: black solid 2px; margin: 20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNTNtaf3KljpXCAzaqKCAdXtHGVVQLYMhy0A&s"><br> Wielomiany są podstawowymi obiektami w algebrze i są szeroko stosowane w matematyce i innych dziedzinach nauki.</p>
+            <h4>b) Najważniejsze własności:</h4>
+            <div id="graphs-container">
+                <div class="graph-box">
+                    <img style="height:300px" src="https://i.ytimg.com/vi/OPaXBoruLEg/maxresdefault.jpg">
+                    <p>Przykład wykresu czwartego stopnia wielomianu.</p>
+                </div>
+                <div class="graph-box">
+                    <img style="height:300px" src="https://www.matmana6.pl/zdjecia/szkola_srednia/wielomiany/nierownosci_wielomianowe_32.png">
+                    <p>Parzystość oraz nieparzystość.</p>
+                </div>
+                <div class="graph-box">
+                    <img style="height:300px" src="https://www.zsgrzeszow.pl/images/matematyka_pliki/slajdy/bezu_03.jpg">
+                    <p>Schemat Hornera.</p>
+                </div>
+                <div class="graph-box">
+                    <img style="height:300px" src="https://dtf1hz3qqlprg.cloudfront.net/data/scale-2400/f768cf0d0ab7ff09725d29c87be6161e.png-d6bba40797701b8bd6ecf85a9dbda77c.webp">
+                    <p>Dzielenie wielomianów.</p>
+                </div>
+            </div>
+            <h4>c) Przykłady zadań:</h4>
+            <img id="exercises" style="border-left:black solid 4px" src="https://lh3.googleusercontent.com/proxy/QNkvqW44UOPoh6PTUopAngBCdL70seAEiF_fueCJNgl-YiVpcNxwv2Ute1E75lIjV3YMfAb3GzAb4SsCkmBtBW2heOLACdNo" alt="Przykłady zadań z wielomianów"><br><br>
+            <div class="buttons">
+                <a class="before" href="liniowa.html">Wcześniejsza lekcja</a>
+            </div>
+            <a class="styled-link" href="../quizy/quizWiel.html">Przejdź do quizu</a>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("menubtn").style.visibility = "hidden"
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("menubtn").style.visibility = 'visible';
+        }
+    </script>
+</body>

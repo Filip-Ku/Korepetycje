@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/polish.css">
+    <title>Starożytność</title>
+</head>
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <h2>Matematyka</h2>
+    <a href="trygonometria.html">Trygonometria</a>
+    <a href="geometria.html">Geometria</a>
+    <a href="kombinatoryka.html">Kombinatoryka</a>
+    <a href="square.html">Funkcja Kwadratowa</a>
+    <a href="liniowa.html">Funkcja Liniowa</a>
+    <a href="wielomiany.html">Wielomiany</a>
+    <hr>
+    <h2>Język Polski</h2>
+    <a href="ancient.html" style="color:black;background-color: white;">Starożytność</a>
+    <a href="middleAge.html">Średniowiecze</a>
+    <a href="renesans.html">Renesans</a>
+    <a href="baroque.html">Barok</a>
+    <a href="romantism.html">Romantyzm</a>
+    <a href="pozytywizm.html">Pozytywizm</a>
+    <hr>
+    <h2>Język angielski</h2>
+    <a href="past_time.html">Czasy Przeszłe</a>
+    <a href="present_time.html" >Czasy Teraźniejsze</a>
+    <a href="future_time.html">Czasy Przyszłe</a>
+  </div>
+  <div id="main">
+    <ul>
+      <li><a href="../index.html">Strona główna</a></li>
+      <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+      <li style="float:right"><a href="../about.html">O nas</a></li>
+  </ul>
+  <img src="../images/menu.png" onclick="openNav()" style="width: 30px; height: auto; cursor: pointer; position: sticky; top: 15px; left: 15px; margin-top: 15px;" id="menubtn">
+  <div id="container">
+    <h2>Starożytność</h2>
+    <h4>a) Najważniejsze informacje:</h4>
+    <p>Inaczej zwana antykiem, obejmuje najdawniejsze dzieje człowieka, odkąd powstały pierwsze cywilizacje i – z czasem – znalazły sposób na utrwalenie mowy za pomocą pisma. Cywilizacje te, kształtujące się w południowej Europie, północnej Afryce i na Bliskim Wschodzie, pozostawiły po sobie ważne dzieła, które miały ogromny wpływ na rozwój kultury europejskiej: filozofię, sztukę, Biblię i mitologię.</p>
+    <h4>b) Filozofia w starożytności:</h4>
+    <p>Filozofia narodziła się w starożytnej Grecji i oznacza „umiłowanie mądrości”. Filozofowie starali się znaleźć odpowiedź na odwieczne pytania ludzkości: skąd pochodzimy? czym jesteśmy? jaka jest nasza rola? dokąd zmierzamy? Ważni filozofowie, tak jak Sokrates, Platon i Arystoteles, podkreślali różne aspekty ludzkiego poznania, moralności i życia społecznego.</p>
+    
+    <h4>c) Sztuka w starożytności:</h4>
+    <p>Sztuka antyczna cechowała się pięknem, symetrią i harmonią. Dzieła starożytne często przedstawiały przyrodę oraz młode, zdrowe i silne postacie ludzkie. W architekturze dominowały monumentalne budowle, takie jak świątynie, amfiteatry czy łuki triumfalne, które do dziś zachwycają swoją wielkością i majestatem. Literatura antyczna, taka jak eposy Homera czy tragedie greckie, również odzwierciedlała wartości i wyobrażenia tamtego okresu.</p>
+    
+    <h4>d) Najważniejsze lektury:</h4>
+    <div id="lectures">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZCJIQ2vW4CjbCfN6DTCdZdI83kDE8lReDpQ&s">
+        <img src="https://ecsmedia.pl/c/mitologia-grekow-i-rzymian-lektura-z-opracowaniem-w-iext132352069.jpg">
+        <img src="https://ecsmedia.pl/c/iliada-b-iext119928377.jpg">
+        <img src="https://ecsmedia.pl/c/odyseja-b-iext121786717.jpg">
+    </div>
+   
+    <div class="buttons">
+     <a class="after" href="middleAge.html">Następna lekcja</a>
+    </div>    
+    <a class="styled-link" href="../quizy/quizST.html">Przejdź do quizu</a>
+    </div>
+
+  </div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.getElementById("menubtn").style.visibility="hidden"
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+      document.getElementById("menubtn").style.visibility = 'visible';
+    }
+    </script>
+</html>

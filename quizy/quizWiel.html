@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/quiz.css"> 
+    <title>Wielomiany Quiz</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="../offer.html">Oferta</a></li>
+            <li><a href="../theory.html">Teoria</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+    </header>
+
+<main>
+    <div id="container">
+        <h1>Quiz z działu wielomianów</h1><br>
+
+        <h2 class="question">1. Jak wygląda wzór ogólny wielomianu stopnia n?</h2>
+        <label><input type="radio" name="question1" id="correct1">P(x) = a₀ + a₁x + a₂x² + ... + aₙxⁿ</label>
+        <label><input type="radio" name="question1">P(x) = a₀ + a₁x + a₂x³ + ... + aₙxⁿ</label>
+        <label><input type="radio" name="question1">P(x) = a₀ + a₁x + a₂x² + ... + aₙ</label>
+        <label><input type="radio" name="question1">P(x) = a₀ + a₁x² + a₂x³ + ... + aₙxⁿ</label><br>
+
+        <h2 class="question">2. Jak nazywa się najwyższy współczynnik w wielomianie P(x) = 4x³ - 2x² + x - 7?</h2>
+        <label><input type="radio" name="question2" id="correct2">Współczynnik wiodący</label>
+        <label><input type="radio" name="question2">Wyraz wolny</label>
+        <label><input type="radio" name="question2">Stopień wielomianu</label>
+        <label><input type="radio" name="question2">Początkowy współczynnik</label><br>
+
+        <h2 class="question">3. Co to jest pierwiastek wielomianu?</h2>
+        <label><input type="radio" name="question3">Wartość x, dla której wielomian osiąga wartość maksymalną</label>
+        <label><input type="radio" name="question3">Wartość x, dla której wielomian jest równy zeru</label><br><br>
+        <label><input type="radio" name="question3" id="correct3">Wartość x, dla której wielomian P(x) = 0</label>
+        <label><input type="radio" name="question3">Wartość x, dla której wielomian zmienia znak</label><br>
+
+        <h2 class="question">4. Jaki jest stopień wielomianu P(x) = 3x⁴ - 5x² + 2x - 1?</h2>
+        <label><input type="radio" name="question4" id="correct4">4</label>
+        <label><input type="radio" name="question4">3</label>
+        <label><input type="radio" name="question4">2</label>
+        <label><input type="radio" name="question4">1</label><br>
+
+        <h2 class="question">5. Co oznacza, że wielomian P(x) jest podzielny przez (x - 3)?</h2>
+        <label><input type="radio" name="question5">P(3) > 0</label>
+        <label><input type="radio" name="question5" id="correct5">P(3) = 0</label>
+        <label><input type="radio" name="question5">P(-3) = 0</label>
+        <label><input type="radio" name="question5">P(3) < 0</label><br>
+
+        <label><input type="submit" value="Sprawdź wynik!" onclick="checkAns()"></label><br><br>
+
+        <a href="../teoria/wielomiany.html">Powróć do lekcji!</a>
+    </div>    
+</main>
+
+<script type="text/javascript">
+    function checkAns() {
+        var score = 0;
+        if(document.getElementById('correct1').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct2').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct3').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct4').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct5').checked){
+            score++;
+        }
+
+        alert("Uzyskane punkty: " + score);
+
+        var radioButtons = document.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(function (radio) {
+            radio.checked = false;
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/quiz.css">
+    <title>Quiz: Romantyzm</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="../offer.html">Oferta</a></li>
+            <li><a href="../theory.html">Teoria</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+    </header>
+
+<main>
+    <div id="container">
+        <h1>Quiz z epoki literackiej Romantyzm</h1><br>
+
+        <h2 class="question">1. Który z poniższych autorów jest związany z literaturą romantyczną?</h2>
+        <label><input type="radio" name="question1" id="correct1">Adam Mickiewicz</label>
+        <label><input type="radio" name="question1">Juliusz Słowacki</label>
+        <label><input type="radio" name="question1">Bolesław Prus</label>
+        <label><input type="radio" name="question1">William Shakespeare</label><br>
+
+        <h2 class="question">2. Które z poniższych dzieł jest typowym przykładem literatury romantycznej?</h2>
+        <label><input type="radio" name="question2">Pan Tadeusz</label>
+        <label><input type="radio" name="question2" id="correct2">Dziady</label>
+        <label><input type="radio" name="question2">Zemsta</label>
+        <label><input type="radio" name="question2">Wesele</label><br>
+
+        <h2 class="question">3. Który z poniższych twórców jest uważany za prekursora romantyzmu w literaturze polskiej?</h2>
+        <label><input type="radio" name="question3">Adam Mickiewicz</label>
+        <label><input type="radio" name="question3" id="correct3">Juliusz Słowacki</label>
+        <label><input type="radio" name="question3">Zygmunt Krasiński</label>
+        <label><input type="radio" name="question3">Stanisław Wyspiański</label><br>
+
+        <h2 class="question">4. Co charakteryzuje literaturę romantyczną?</h2>
+        <label><input type="radio" name="question4">Klarowność i prostota formy</label>
+        <label><input type="radio" name="question4">Optymizm i radość życia</label><br><br>
+        <label><input type="radio" name="question4" id='correct4'>Nadnaturalne motywy i tajemniczość</label>
+        <label><input type="radio" name="question4">Klasyczna symetria i harmonia</label><br>
+
+        <h2 class="question">5. Które z poniższych dzieł jest autorstwa Adama Mickiewicza?</h2>
+        <label><input type="radio" name="question5" id="correct5">Dziady</label>
+        <label><input type="radio" name="question5">Lalka</label>
+        <label><input type="radio" name="question5">Balladyna</label>
+        <label><input type="radio" name="question5">Wesele</label><br>
+
+        <label><input type="submit" value="Sprawdź wynik!" onclick="checkAns()"></label><br><br>
+
+        <a href="../teoria/romantism.html">Powróć do lekcji!</a>
+    </div>    
+</main>
+<script type="text/javascript">
+    function checkAns() {
+        var score = 0;
+        if(document.getElementById('correct1').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct2').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct3').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct4').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct5').checked){
+            score++;
+        }
+
+        alert("Uzyskane punkty: " + score);
+
+        var radioButtons = document.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(function (radio) {
+            radio.checked = false;
+        });
+    }
+</script>
+</body>
+</html>

@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="offer.css">
+    <link rel="stylesheet" href="style/offer.css">
     <title>Oferta</title>
+    <style>
+    </style>
 </head>
 <body>
     <header>
         <ul>
-            <li ><a href="index.html">Strona Główna</a></li>
+            <li><a href="index.html">Strona Główna</a></li>
             <li><a href="theory.html">Teoria</a></li>
             <li style="float:right"><a href="contact.html">Kontakt</a></li>
             <li style="float:right"><a href="about.html">O nas</a></li>
-          </ul>
+        </ul>
     </header>
     <main>
         <div id="left">
@@ -25,32 +27,47 @@
         </div>
         <div id="middle">
             <p class="description">Lorem ipsum dolor sit amet,
-                 consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <p class="description">Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-           </p>
-           <p class="description">Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-       </p>
-       <p class="description">Lorem ipsum dolor sit amet,
-        consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-   </p>
-   <p class="description">Lorem ipsum dolor sit amet,
-    consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+            </p>
+            <p class="description">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="description">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="description">Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
         </div>
         <div id="right">
-            <button id="button">Kontakt</button>
-            <button id="button">Kontakt</button>
-            <button id="button">Kontakt</button>
-            <button id="button">Kontakt</button>
-            <button id="button">Kontakt</button>
+            <div class="contact-container">
+                <button class="contact-button">Kontakt</button>
+                <div class="contactInfo">Numer telefonu: 123-456-789<br>Email: kontakt@example.com</div>
+            </div>
+            <div class="contact-container">
+                <button class="contact-button">Kontakt</button>
+                <div class="contactInfo">Numer telefonu: 123-456-789<br>Email: kontakt@example.com</div>
+            </div>
+            <div class="contact-container">
+                <button class="contact-button">Kontakt</button>
+                <div class="contactInfo">Numer telefonu: 123-456-789<br>Email: kontakt@example.com</div>
+            </div>
+            <div class="contact-container">
+                <button class="contact-button">Kontakt</button>
+                <div class="contactInfo">Numer telefonu: 123-456-789<br>Email: kontakt@example.com</div>
+            </div>
+            <div class="contact-container">
+                <button class="contact-button">Kontakt</button>
+                <div class="contactInfo">Numer telefonu: 123-456-789<br>Email: kontakt@example.com</div>
+            </div>
         </div>
     </main>
     <footer>
@@ -58,6 +75,18 @@
     </footer>  
     <button id="scrollUpBtn">⬆️</button>
     <button id="scrollDownBtn">⬇️</button>
+    <script>
+        document.querySelectorAll('.contact-button').forEach(button => {
+            button.addEventListener('click', function() {
+                var contactInfo = this.nextElementSibling;
+                if (contactInfo.style.display === 'none' || contactInfo.style.display === '') {
+                    contactInfo.style.display = 'block';
+                } else {
+                    contactInfo.style.display = 'none';
+                }
+            });
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

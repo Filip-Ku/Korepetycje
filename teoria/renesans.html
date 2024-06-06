@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/polish.css">
+    <title>Renesans</title>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h2>Matematyka</h2>
+        <a href="trygonometria.html">Trygonometria</a>
+        <a href="geometria.html">Geometria</a>
+        <a href="kombinatoryka.html">Kombinatoryka</a>
+        <a href="square.html">Funkcja Kwadratowa</a>
+        <a href="liniowa.html">Funkcja Liniowa</a>
+        <a href="wielomiany.html">Wielomiany</a>
+        <hr>
+        <h2>Język Polski</h2>
+        <a href="ancient.html">Starożytność</a>
+        <a href="middleAge.html">Średniowiecze</a>
+        <a href="#" style="color:black;background-color: white;">Renesans</a>
+        <a href="baroque.html">Barok</a>
+        <a href="romantism.html">Romantyzm</a>
+        <a href="pozytywizm.html">Pozytywizm</a>
+        <hr>
+        <h2>Język angielski</h2>
+        <a href="past_time.html">Czasy Przeszłe</a>
+        <a href="present_time.html">Czasy Teraźniejsze</a>
+        <a href="future_time.html">Czasy Przyszłe</a>
+    </div>
+
+    <div id="main">
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+        <img src="../images/menu.png" onclick="openNav()" style="width: 30px; height: auto; cursor: pointer; position: sticky; top: 15px; left: 15px; margin-top: 15px;"
+            id="menubtn">
+        <div id="container">
+            <h2>Renesans</h2>
+            <h4>a) Najważniejsze informacje:</h4>
+            <p>Renesans to epoka w historii kultury europejskiej, która trwała od XIV do XVI wieku. Charakteryzowała się ożywieniem nauki, sztuki i literatury oraz powrotem do wartości antycznych. W tym okresie rozwijała się humanistyka, a także dokonano ważnych odkryć geograficznych.</p>
+            <h4>b) Filozofia w renesansie:</h4>
+            <p>W renesansie filozofowie przywracali sztukę starożytną, propagowali racjonalizm i humanizm. Najważniejszymi postaciami byli m.in. Leonardo da Vinci, Niccolò Machiavelli i Erasmus z Rotterdamu. Filozofowie renesansu eksplorowali ludzkie umysły, badań naukowych i sprawy społeczne.</p>
+
+            <h4>c) Sztuka w renesansie:</h4>
+            <p>W sztuce renesansowej dominował realizm, proporcja i harmonia. Malarze tak jak Leonardo da Vinci czy Michał Anioł tworzyli arcydzieła reprezentujące idealną postać ludzką oraz sceny religijne i mitologiczne. Architektura renesansu cechowała się symetrią, proporcją i harmonią, a najlepszym przykładem są budowle takie jak Bazylika św. Piotra w Rzymie.</p>
+
+            <h4>d) Najważniejsze lektury:</h4>
+            <div id="lectures">
+                <img src="https://a.allegroimg.com/original/110dd5/b470e199427fadfe867f2fd4830e/KOCHANOWSKI-TRENY-BN-NR-1-SERJA-I-1934">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0EilIKEe0-a9djySxsujV_b1Of_K1MtW-Tw&s">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWdFlqz879V8dEy5KRXD-sHCru63QzK49DA&s">
+                <img src="https://wolnelektury.pl/media/book/cover_clean/boccaccio-dekameron_ppv04oQ.jpg">
+            </div>
+            <div class="buttons">
+                <a class="before" href="middleAge.html">Wcześniejsza lekcja</a> <a class="after" href="baroque.html">Następna lekcja</a>
+            </div>
+            <a class="styled-link" href="../quizy/quizRE.html">Przejdź do quizu</a>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("menubtn").style.visibility = "hidden"
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("menubtn").style.visibility = 'visible';
+        }
+    </script>
+</body>
+
+</html>

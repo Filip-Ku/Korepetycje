@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/quiz.css">
+    <title>Quiz: Past Tenses</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="../offer.html">Oferta</a></li>
+            <li><a href="../theory.html">Teoria</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+    </header>
+
+<main>
+    <div id="container">
+        <h1>Past Tenses Grammar Quiz</h1><br>
+    
+        <h2 class="question">1. Which tense is used to describe actions that were completed in the past before another action took place?</h2>
+        <label><input type="radio" name="question1" id="correct1">Past Perfect</label>
+        <label><input type="radio" name="question1">Past Continuous</label>
+        <label><input type="radio" name="question1">Simple Past</label>
+        <label><input type="radio" name="question1">Present Perfect</label><br>
+    
+        <h2 class="question">2. When do we use the Past Simple tense?</h2>
+        <label><input type="radio" name="question2">To describe ongoing actions in the past</label>
+        <label><input type="radio" name="question2" id="correct2">To talk about completed actions in the past</label>
+        <label><input type="radio" name="question2">To indicate future plans</label>
+        <label><input type="radio" name="question2">To express current feelings</label><br>
+    
+        <h2 class="question">3. Which tense is used to describe past habits or repeated actions?</h2>
+        <label><input type="radio" name="question3">Past Perfect</label>
+        <label><input type="radio" name="question3">Present Perfect</label>
+        <label><input type="radio" name="question3" id="correct3">Used to</label>
+        <label><input type="radio" name="question3">Future Continuous</label><br>
+    
+        <h2 class="question">4. What is the past participle of the verb "eat"?</h2>
+        <label><input type="radio" name="question4">Eaten</label>
+        <label><input type="radio" name="question4">Ate</label>
+        <label><input type="radio" name="question4" id='correct4'>Eaten</label>
+        <label><input type="radio" name="question4">Ating</label><br>
+    
+        <h2 class="question">5. Which tense is used to express an action that was ongoing in the past for a specific duration?</h2>
+        <label><input type="radio" name="question5">Present Perfect</label>
+        <label><input type="radio" name="question5">Future Simple</label>
+        <label><input type="radio" name="question5">Past Simple</label>
+        <label><input type="radio" name="question5" id="correct5">Past Continuous</label><br>
+    
+        <label><input type="submit" value="Check Answers!" onclick="checkAns()"></label><br><br>
+    
+        <a href="../teoria/past_time.html">Go back to the lesson!</a>
+    </div>
+</main>
+<script type="text/javascript">
+    function checkAns() {
+        var score = 0;
+        if(document.getElementById('correct1').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct2').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct3').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct4').checked){
+            score++;
+        }
+
+        if(document.getElementById('correct5').checked){
+            score++;
+        }
+
+        alert("Uzyskane punkty: " + score);
+
+        var radioButtons = document.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(function (radio) {
+            radio.checked = false;
+        });
+    }
+</script>
+</body>
+</html>

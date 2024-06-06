@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/polish.css">
+    <title>Romantyzm</title>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h2>Matematyka</h2>
+        <a href="trygonometria.html">Trygonometria</a>
+        <a href="geometria.html">Geometria</a>
+        <a href="kombinatoryka.html">Kombinatoryka</a>
+        <a href="square.html">Funkcja Kwadratowa</a>
+        <a href="liniowa.html">Funkcja Liniowa</a>
+        <a href="wielomiany.html">Wielomiany</a>
+        <hr>
+        <h2>Język Polski</h2>
+        <a href="ancient.html">Starożytność</a>
+        <a href="middleAge.html">Średniowiecze</a>
+        <a href="renesans.html">Renesans</a>
+        <a href="baroque.html">Barok</a>
+        <a href="#" style="color:black;background-color: white;">Romantyzm</a>
+        <a href="pozytywizm.html">Pozytywizm</a>
+        <hr>
+        <h2>Język angielski</h2>
+        <a href="past_time.html">Czasy Przeszłe</a>
+        <a href="present_time.html">Czasy Teraźniejsze</a>
+        <a href="future_time.html">Czasy Przyszłe</a>
+    </div>
+
+    <div id="main">
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+        <img src="../images/menu.png" onclick="openNav()" style="width: 30px; height: auto; cursor: pointer; position: sticky; top: 15px; left: 15px; margin-top: 15px;"
+            id="menubtn">
+        <div id="container">
+            <h2>Romantyzm</h2>
+            <h4>a) Najważniejsze informacje:</h4>
+            <p>Romantyzm to epoka w historii kultury europejskiej, trwająca od końca XVIII do połowy XIX wieku, która cechowała się naciskiem na indywidualizm, emocje i dążenie do wolności. W romantyzmie rozwijała się literatura, muzyka, malarstwo i filozofia, a także narodziły się ruchy narodowe.</p>
+            <h4>b) Filozofia w romantyzmie:</h4>
+            <p>W romantyzmie filozofowie kwestionowali racjonalizm i odwoływali się do uczuć i intuicji. Postacie takie jak Johann Gottlieb Fichte czy Friedrich Schelling poszukiwały duchowych wartości i ideałów, podkreślając znaczenie emocji w poznaniu.</p>
+
+            <h4>c) Sztuka w romantyzmie:</h4>
+            <p>Sztuka romantyczna skupiała się na wyrażaniu emocji, marzeń i tęsknot. Malarze, tacy jak William Turner czy Eugène Delacroix, tworzyli dzieła o dramatycznej atmosferze i silnym oddziaływaniu wizualnym. Literatura romantyczna często poruszała tematy natury, miłości, patriotyzmu i tęsknoty za wolnością.</p>
+
+            <h4>d) Najważniejsze lektury:</h4>
+            <div id="lectures">
+                <img src="https://ecsmedia.pl/c/pan-tadeusz-b-iext135008338.jpg">
+                <img src="https://s.matras.pl/files/covers/card/f1/T281928k.jpg">
+                <img src="https://ecsmedia.pl/c/kordian-b-iext129210855.jpg">
+                <img src="https://ksiegarnia-tuliszkow.pl/userdata/public/gfx/1771233/Cierpienia-mlodego-Wertera-lektura-z-opracowaniem.jpg">
+            </div>
+            <div class="buttons">
+                <a class="before" href="baroque.html">Wcześniejsza lekcja</a> <a class="after" href="pozytywizm.html">Następna lekcja</a>
+            </div>
+            <a class="styled-link" href="../quizy/quizRO.html">Przejdź do quizu</a>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("menubtn").style.visibility = "hidden"
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("menubtn").style.visibility = 'visible';
+        }
+    </script>
+</body>
+
+</html>

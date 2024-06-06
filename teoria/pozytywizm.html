@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/polish.css">
+    <title>Pozytywizm</title>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h2>Matematyka</h2>
+        <a href="trygonometria.html">Trygonometria</a>
+        <a href="geometria.html">Geometria</a>
+        <a href="kombinatoryka.html">Kombinatoryka</a>
+        <a href="square.html">Funkcja Kwadratowa</a>
+        <a href="liniowa.html">Funkcja Liniowa</a>
+        <a href="wielomiany.html">Wielomiany</a>
+        <hr>
+        <h2>Język Polski</h2>
+        <a href="ancient.html">Starożytność</a>
+        <a href="middleAge.html">Średniowiecze</a>
+        <a href="renesans.html">Renesans</a>
+        <a href="baroque.html">Barok</a>
+        <a href="romantism.html">Romantyzm</a>
+        <a href="#" style="color:black;background-color: white;">Pozytywizm</a>
+        <hr>
+        <h2>Język angielski</h2>
+        <a href="past_time.html">Czasy Przeszłe</a>
+        <a href="present_time.html">Czasy Teraźniejsze</a>
+        <a href="future_time.html">Czasy Przyszłe</a>
+    </div>
+
+    <div id="main">
+        <ul>
+            <li><a href="../index.html">Strona główna</a></li>
+            <li style="float:right"><a href="../contact.html">Kontakt</a></li>
+            <li style="float:right"><a href="../about.html">O nas</a></li>
+        </ul>
+        <img src="../images/menu.png" onclick="openNav()" style="width: 30px; height: auto; cursor: pointer; position: sticky; top: 15px; left: 15px; margin-top: 15px;"
+            id="menubtn">
+        <div id="container">
+            <h2>Pozytywizm</h2>
+            <h4>a) Najważniejsze informacje:</h4>
+            <p>Pozytywizm to nurt filozoficzny i literacki, który dominował w XIX wieku. Jego podstawowym założeniem było oparcie wiedzy na faktach i doświadczeniu, a także wierzenie, że nauka i postęp techniczny mogą prowadzić do poprawy warunków życia ludzi. Pozytywiści dążyli do racjonalnej analizy społeczeństwa i wprowadzenia reform społecznych.</p>
+            <h4>b) Filozofia w pozytywizmie:</h4>
+            <p>W pozytywizmie filozofowie, tacy jak Auguste Comte, kładli nacisk na obserwację i doświadczenie jako podstawę poznania. Comte rozwijał koncepcję "praw dydaktycznych", które miały prowadzić do lepszego zrozumienia społeczeństwa i umożliwić wprowadzenie reform społecznych.</p>
+
+            <h4>c) Sztuka w pozytywizmie:</h4>
+            <p>Sztuka pozytywistyczna kładła nacisk na realizm i pragmatyzm. Malarze i pisarze starali się przedstawiać życie takim, jakie było, unikając idealizacji i romantyzacji. Literatura pozytywistyczna często opisywała problemy społeczne i polityczne, skupiając się na realiach codzienności.</p>
+
+            <h4>d) Najważniejsze lektury:</h4>
+            <div id="lectures">
+                <img src="https://image.ceneostatic.pl/data/products/50089449/i-lalka.jpg">
+                <img src="https://ecsmedia.pl/c/ludzie-bezdomni-b-iext138543553.jpg">
+                <img src="https://emp-scs.img-osdw.pl/img-p/1/kipwn/d576082e/std/2bc-452/927709890o.webp">
+                <img src="https://ecsmedia.pl/c/ziemia-obiecana-b-iext151255112.jpg">
+            </div>
+            <div class="buttons">
+                <a class="before" href="romantism.html">Wcześniejsza lekcja</a>
+            </div>
+            <a class="styled-link" href="../quizy/quizPO.html">Przejdź do quizu</a>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("menubtn").style.visibility = "hidden"
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("menubtn").style.visibility = 'visible';
+        }
+    </script>
+</body>
+
+</html>
